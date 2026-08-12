@@ -1,1 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex | Gestão Contábil & Inteligência Financeira</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Apex<span>.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#metricas">Métricas</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#calculadora">Calculadora</a></li>
+          <li><a href="#noticias">Radar Fiscal</a></li>
+          <li><a href="#portal-section">Área do Cliente</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn-ghost" id="open-portal-btn">Área do Cliente</button>
+        <button class="btn-primary" id="open-booking-btn">Agendar Consultoria</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="badge"><span class="pulse-dot"></span> BPO Financeiro & Controladoria</span>
+        <h1>Engenharia Contábil para Escalabilidade do seu Negócio.</h1>
+        <p class="subtitle">Automatize processos administrativos, reduza a carga tributária com conformidade legal e tome decisões baseadas em dados financeiros precisos.</p>
+        <div class="hero-btns">
+          <button class="btn-primary" id="open-booking-hero">Agendar Consultoria</button>
+          <a href="#calculadora" class="btn-secondary">Simular Impostos</a>
+          <button class="btn-ghost-border" id="open-portal-hero">Portal do Cliente</button>
+        </div>
+      </div>
+
+      <!-- DASHBOARD PREVIEW -->
+      <div class="hero-dashboard-card">
+        <div class="card-header">
+          <span>Status do Sistema Contábil</span>
+          <span class="status-online">Ativo</span>
+        </div>
+        <div class="metrics-mini">
+          <div class="metric-item">
+            <small>Impostos Recuperados</small>
+            <strong>R$ 14.8M+</strong>
+          </div>
+          <div class="metric-item">
+            <small>Conformidade Fiscal</small>
+            <strong>99.9%</strong>
+          </div>
+        </div>
+        <div class="chart-placeholder">
+          <div class="bar" style="--height: 40%"></div>
+          <div class="bar" style="--height: 65%"></div>
+          <div class="bar" style="--height: 50%"></div>
+          <div class="bar" style="--height: 85%"></div>
+          <div class="bar active" style="--height: 100%"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. MÉTRICAS (COUNTERS) -->
+    <section class="metrics-section" id="metricas">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <h2 class="counter" data-target="350">0</h2>
+          <p>Empresas Atendidas</p>
+        </div>
+        <div class="metric-card">
+          <h2 class="counter" data-target="28">0</h2>
+          <p>% Economia Média em Tributos</p>
+        </div>
+        <div class="metric-card">
+          <h2 class="counter" data-target="15">0</h2>
+          <p>Anos de Atuação no Mercado</p>
+        </div>
+        <div class="metric-card">
+          <h2 class="counter" data-target="100">0</h2>
+          <p>% Entregas no Prazo Legal</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SERVIÇOS (ACCORDION INTERATIVO) -->
+    <section class="services-section" id="servicos">
+      <div class="section-title">
+        <h2>Soluções Especializadas</h2>
+        <p>Aceleração e segurança para a gestão da sua empresa</p>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item active">
+          <button class="accordion-header">
+            <span>01. BPO Financeiro & Gestão de Caixas</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>Terceirização completa das operações financeiras: contas a pagar, contas a receber, faturamento, conciliação bancária diária e relatórios semanais de fluxo de caixa.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>02. Planejamento & Blindagem Tributária</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>Estudo aprofundado do enquadramento tributário (Simples Nacional, Lucro Presumido ou Lucro Real) para garantir a menor alíquota possível dentro das normas fiscais.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>03. Departamentos Pessoal & Trabalhista</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>Processamento de folha de pagamento, eSocial, admissões, demissões, controle de férias e consultoria preventiva contra passivos trabalhistas.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>04. Controladoria & Consultoria Administrativa</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>Acompanhamento de DRE, balancetes gerenciais, definição de KPIs e consultoria estratégica para aumento da margem de lucro e eficiência operacional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CALCULADORA TRIBUTÁRIA AVANÇADA -->
+    <section class="calc-section" id="calculadora">
+      <div class="calc-container">
+        <div class="calc-info">
+          <h2>Simulador de Regime Tributário</h2>
+          <p>Compare uma estimativa simplificada de tributação entre <strong>Simples Nacional</strong> e <strong>Lucro Presumido</strong> para prestadores de serviço.</p>
+        </div>
+
+        <form class="calc-box" id="tax-form">
+          <div class="form-group">
+            <label for="faturamento-anual">Faturamento Mensal Médio (R$)</label>
+            <input type="number" id="faturamento-anual" placeholder="Ex: 40000" required>
+          </div>
+
+          <div class="form-group">
+            <label for="folha-pagamento">Gasto Mensal com Folha / Pró-labore (R$)</label>
+            <input type="number" id="folha-pagamento" placeholder="Ex: 10000" required>
+          </div>
+
+          <button type="submit" class="btn-primary full-width">Processar Análise</button>
+
+          <div id="calc-results" class="calc-results hidden">
+            <div class="result-grid">
+              <div class="result-card">
+                <small>Simples Nacional (Aprox.)</small>
+                <h3 id="res-simples">R$ 0,00</h3>
+              </div>
+              <div class="result-card">
+                <small>Lucro Presumido (Aprox.)</small>
+                <h3 id="res-presumido">R$ 0,00</h3>
+              </div>
+            </div>
+            <div class="recommendation-badge" id="res-recomendacao"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- RADAR FISCAL / NOTÍCIAS -->
+    <section class="news-section" id="noticias">
+      <div class="section-title">
+        <h2>Radar Fiscal & Atualizações</h2>
+        <p>Mantenha sua empresa atualizada com as obrigações da legislação</p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="todos">Todos</button>
+        <button class="tab-btn" data-filter="impostos">Impostos</button>
+        <button class="tab-btn" data-filter="trabalhista">Trabalhista</button>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card" data-category="impostos">
+          <span class="category-tag">Impostos</span>
+          <h3>Mudanças nas alíquotas do ISS para Serviços de Tecnologia</h3>
+          <p>Entenda como a nova adequação pode impactar empresas optantes pelo Simples Nacional.</p>
+        </article>
+        <article class="news-card" data-category="trabalhista">
+          <span class="category-tag">Trabalhista</span>
+          <h3>Atualização na Tabela de Retenção do INSS</h3>
+          <p>Novos prazos de envio das obrigações acessórias pelo eSocial entram em vigor este mês.</p>
+        </article>
+        <article class="news-card" data-category="impostos">
+          <span class="category-tag">Impostos</span>
+          <h3>Calendário de Fechamento do Balanço Semestral</h3>
+          <p>Checklist essencial para evitar multas de transmissão fora do prazo regulamentar.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. ÁREA DO CLIENTE -->
+    <section class="portal-section" id="portal-section">
+      <div class="section-title">
+        <h2>Portal do Cliente</h2>
+        <p>Acompanhamento de obrigações, documentos e solicitações em tempo real</p>
+      </div>
+
+      <div class="portal-dashboard">
+        <!-- Sidebar do Portal -->
+        <aside class="portal-sidebar">
+          <div class="user-profile">
+            <div class="avatar">JS</div>
+            <div>
+              <strong>TechSolutions LTDA</strong>
+              <small>CNPJ: 12.345.678/0001-90</small>
+            </div>
+          </div>
+          <nav class="portal-menu">
+            <button class="portal-menu-item active" data-tab="tab-guias">📄 Guias & Impostos</button>
+            <button class="portal-menu-item" data-tab="tab-documentos">📁 Documentos / Balancetes</button>
+            <button class="portal-menu-item" data-tab="tab-solicitacoes">💬 Abrir Chamado</button>
+          </nav>
+        </aside>
+
+        <!-- Conteúdo do Portal -->
+        <div class="portal-content">
+          <!-- Tab 1: Guias e Impostos -->
+          <div class="portal-tab active" id="tab-guias">
+            <h3>Guias a Vencer</h3>
+            <div class="table-responsive">
+              <table class="portal-table">
+                <thead>
+                  <tr>
+                    <th>Imposto / Guia</th>
+                    <th>Vencimento</th>
+                    <th>Valor</th>
+                    <th>Status</th>
+                    <th>Ação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>DAS - Simples Nacional</td>
+                    <td>20/08/2026</td>
+                    <td>R$ 4.320,00</td>
+                    <td><span class="status-badge pending">Pendente</span></td>
+                    <td><button class="btn-sm">Baixar PDF</button></td>
+                  </tr>
+                  <tr>
+                    <td>DARF - IRRF Folha</td>
+                    <td>25/08/2026</td>
+                    <td>R$ 1.150,00</td>
+                    <td><span class="status-badge pending">Pendente</span></td>
+                    <td><button class="btn-sm">Baixar PDF</button></td>
+                  </tr>
+                  <tr>
+                    <td>GPS - INSS Empresa</td>
+                    <td>10/08/2026</td>
+                    <td>R$ 3.890,00</td>
+                    <td><span class="status-badge paid">Pago</span></td>
+                    <td><button class="btn-sm disabled" disabled>Comprovante</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Tab 2: Documentos -->
+          <div class="portal-tab" id="tab-documentos">
+            <h3>Documentos da Empresa</h3>
+            <div class="docs-grid">
+              <div class="doc-card">
+                <span class="doc-icon">📊</span>
+                <div class="doc-info">
+                  <strong>Balanço Patrimonial 2025</strong>
+                  <small>PDF • 2.4 MB</small>
+                </div>
+                <button class="btn-sm">Download</button>
+              </div>
+              <div class="doc-card">
+                <span class="doc-icon">📜</span>
+                <div class="doc-info">
+                  <strong>Contrato Social Consolidado</strong>
+                  <small>PDF • 1.1 MB</small>
+                </div>
+                <button class="btn-sm">Download</button>
+              </div>
+              <div class="doc-card">
+                <span class="doc-icon">🛡️</span>
+                <div class="doc-info">
+                  <strong>Certidão Negativa de Débitos (CND)</strong>
+                  <small>Válida até Nov/2026</small>
+                </div>
+                <button class="btn-sm">Download</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Solicitações -->
+          <div class="portal-tab" id="tab-solicitacoes">
+            <h3>Nova Solicitação / Suporte</h3>
+            <form id="ticket-form" class="portal-form">
+              <div class="form-group">
+                <label for="ticket-subject">Assunto</label>
+                <input type="text" id="ticket-subject" placeholder="Ex: Alteração de Pró-labore" required>
+              </div>
+              <div class="form-group">
+                <label for="ticket-dept">Departamento</label>
+                <select id="ticket-dept" required>
+                  <option value="fiscal">Setor Fiscal</option>
+                  <option value="pessoal">Departamento Pessoal / Folha</option>
+                  <option value="contabil">Contabilidade Geral</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="ticket-msg">Descrição do Pedido</label>
+                <textarea id="ticket-msg" rows="4" placeholder="Descreva os detalhes da sua solicitação..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Enviar Chamado</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL COMPLETO DE AGENDAMENTO DE CONSULTORIA -->
+  <div class="modal-overlay" id="modal-booking">
+    <div class="modal-content modal-large">
+      <button class="close-modal" id="close-booking">&times;</button>
+      
+      <div class="booking-wrapper">
+        <div class="booking-info">
+          <h2>Agende sua Consultoria</h2>
+          <p>Escolha o melhor dia e horário para conversar diretamente com um de nossos especialistas fiscais e administrativos.</p>
+          
+          <ul class="booking-features">
+            <li>✔ Análise personalizada do perfil fiscal</li>
+            <li>✔ Diagnóstico de redução de impostos</li>
+            <li>✔ Duração de 45 minutos (Online via Google Meet / Teams)</li>
+          </ul>
+        </div>
+
+        <form id="booking-form" class="booking-form">
+          <div class="form-step active" id="step-1">
+            <h3>1. Escolha o Serviço e Data</h3>
+            
+            <div class="form-group">
+              <label for="book-service">Tipo de Consultoria</label>
+              <select id="book-service" required>
+                <option value="">Selecione...</option>
+                <option value="planejamento">Planejamento Tributário</option>
+                <option value="bpo">BPO Financeiro e Gestão de Caixa</option>
+                <option value="abertura">Abertura ou Migração de Empresa</option>
+                <option value="diagnostico">Diagnóstico Geral</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="book-date">Data Preferencial</label>
+              <input type="date" id="book-date" required>
+            </div>
+
+            <div class="form-group">
+              <label>Horários Disponíveis</label>
+              <div class="time-slots">
+                <button type="button" class="time-btn">09:00</button>
+                <button type="button" class="time-btn">10:30</button>
+                <button type="button" class="time-btn">14:00</button>
+                <button type="button" class="time-btn">16:00</button>
+              </div>
+              <input type="hidden" id="selected-time" required>
+            </div>
+
+            <button type="button" class="btn-primary full-width" id="btn-next-step">Avançar para Seus Dados</button>
+          </div>
+
+          <div class="form-step" id="step-2">
+            <h3>2. Seus Dados de Contato</h3>
+
+            <div class="form-group">
+              <label for="book-name">Nome Completo</label>
+              <input type="text" id="book-name" required placeholder="Seu nome">
+            </div>
+
+            <div class="form-group">
+              <label for="book-email">E-mail Corporativo</label>
+              <input type="email" id="book-email" required placeholder="seuemail@empresa.com">
+            </div>
+
+            <div class="form-group">
+              <label for="book-phone">Telefone / WhatsApp</label>
+              <input type="tel" id="book-phone" required placeholder="(85) 99999-9999">
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn-secondary" id="btn-prev-step">Voltar</button>
+              <button type="submit" class="btn-primary">Confirmar Agendamento</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
